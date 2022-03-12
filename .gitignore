@@ -1,32 +1,14 @@
-# Prerequisites
-*.d
+First, ignore everything
+*
+# Now, whitelist anything that's a directory
+!*/
+# And all the file types you're interested in.
+!*.cpp
+!*.h
+!*.glsl
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Visual Studio solution and project files
+!LearnOpenGL.sln
+!LearnOpenGL.vcxproj
+!LearnOpenGL.vcxproj.filters
+!LearnOpenGL.vcxproj.user
