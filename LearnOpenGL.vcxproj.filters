@@ -15,27 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="1-GettingStarted\include\Camera.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="1-GettingStarted\include\Shader.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="1-GettingStarted\src\fragmentShader.glsl">
-      <Filter>Source Files</Filter>
-    </None>
-    <None Include="1-GettingStarted\src\vertexShader.glsl">
-      <Filter>Source Files</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="1-GettingStarted\src\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Dependencies\src\glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="2-Lighting\src\2-lighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2-Lighting\src\lightFS.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="2-Lighting\src\lightVS.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="2-Lighting\src\objectFS.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="2-Lighting\src\objectVS.glsl">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2-Lighting\include\Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="2-Lighting\include\Shader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

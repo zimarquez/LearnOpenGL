@@ -96,7 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)1-GettingStarted\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)2-Lighting\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -112,7 +112,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)1-GettingStarted\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)2-Lighting\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,7 +128,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)1-GettingStarted\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)2-Lighting\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -144,7 +144,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)1-GettingStarted\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)2-Lighting\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -155,16 +155,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="1-GettingStarted\include\Camera.h" />
-    <ClInclude Include="1-GettingStarted\include\Shader.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="1-GettingStarted\src\fragmentShader.glsl" />
-    <None Include="1-GettingStarted\src\vertexShader.glsl" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="1-GettingStarted\src\main.cpp" />
+    <ClCompile Include="2-Lighting\src\2-lighting.cpp" />
     <ClCompile Include="Dependencies\src\glad.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="2-Lighting\src\lightFS.glsl" />
+    <None Include="2-Lighting\src\lightVS.glsl" />
+    <None Include="2-Lighting\src\objectFS.glsl" />
+    <None Include="2-Lighting\src\objectVS.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="2-Lighting\include\Camera.h" />
+    <ClInclude Include="2-Lighting\include\Shader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
