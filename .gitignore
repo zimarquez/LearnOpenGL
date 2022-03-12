@@ -1,14 +1,5 @@
-First, ignore everything
-*
-# Now, whitelist anything that's a directory
-!*/
-# And all the file types you're interested in.
-!*.cpp
-!*.h
-!*.glsl
+Ignore debug directory
+*x64
 
-# Visual Studio solution and project files
-!LearnOpenGL.sln
-!LearnOpenGL.vcxproj
-!LearnOpenGL.vcxproj.filters
-!LearnOpenGL.vcxproj.user
+Ignore .vs directory
+*.vs
